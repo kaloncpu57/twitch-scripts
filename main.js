@@ -2,7 +2,7 @@ var Cycler = {};
 Cycler.oauth = Twitch.user()._result.chat_oauth_token;
 Cycler.login = Twitch.user()._result.login;
 Cycler.chan = window.location.href.split("/")[3];
-Cycler.sock = new WebSocket("wss://irc-ws.chat.twitch.tv:80");
+Cycler.sock = new WebSocket("wss://irc-ws.chat.twitch.tv");
 Cycler.colors = ["Blue", "BlueViolet", "CadetBlue", "Chocolate", "Coral", "DodgerBlue", "Firebrick", "GoldenRod", "Green", "HotPink", "OrangeRed", "Red", "SeaGreen", "SpringGreen", "YellowGreen"];
 Cycler.turbo = Twitch.user()._result.has_turbo;
 
