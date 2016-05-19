@@ -9,6 +9,8 @@
 // @grant        none
 // ==/UserScript==
 
-var cyclerscript = document.createElement("script");
-cyclerscript.src = "https://kaloncpu57.github.io/twitch-scripts/cycler/main.js";
-document.head.appendChild(cyclerscript);
+window.onload = function () {
+  var cyclerscript = document.createElement("script");
+  cyclerscript.src = "https://kaloncpu57.github.io/twitch-scripts/cycler/main.js";
+  document.head.appendChild(cyclerscript);
+};
